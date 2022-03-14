@@ -1,0 +1,19 @@
+{
+  "name": "github-oauth-function",
+  "version": "1.0.0",
+  "description": "Github Oauth Netlify function",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loonskai/github-oauth-function.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loonskai/github-oauth-function/issues"
+  },
+  "homepage": "https://github.com/loonskai/github-oauth-function#readme"
+}
