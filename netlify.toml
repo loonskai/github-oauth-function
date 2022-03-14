@@ -1,3 +1,2 @@
 [build]
-  command = "sed -i \"s|${GITHUB_CLIENT_ID}|${GITHUB_CLIENT_SECRET}|${STATE_STRING}|g\" netlify.toml && yarn build"
   functions = "netlify/functions"
