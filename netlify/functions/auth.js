@@ -1,4 +1,4 @@
-export.handler = async function (event, context) {
+exports.handler = async function (event, context) {
   const url = new URL("https://github.com/login/oauth/access_token");
   // url.searchParams.append("client_id", GITHUB_CLIENT_ID);
   // url.searchParams.append("client_secret", GITHUB_CLIENT_SECRET);
