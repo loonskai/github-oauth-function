@@ -1,5 +1,11 @@
 import axios from 'axios';
 
+const headers = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "Content-Type",
+  "Access-Control-Allow-Methods": "GET, POST, OPTION",
+}
+
 exports.handler = async function (event, context) {
   const {
     GITHUB_CLIENT_ID,
@@ -23,16 +29,13 @@ exports.handler = async function (event, context) {
       body: JSON.stringify({
         token
       }),
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "Content-Type",
-        "Access-Control-Allow-Methods": "GET, POST, OPTION",
-      },
+      headers
     }
   }
 
   return {
     statusCode: 401,
-    body: null
+    body: null,
+    headers
   }
 }
