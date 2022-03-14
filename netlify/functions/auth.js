@@ -6,9 +6,10 @@ const headers = {
   "Access-Control-Allow-Methods": "GET, POST, OPTION",
 }
 
-exports.handler = async function (event, context) {
+exports.handler = async function (event) {
   const {
     GITHUB_CLIENT_ID,
+    GITHUB_CLIENT_SECRET,
     STATE_STRING,
     REDIRECT_URI,
   } = process.env;
