@@ -22,7 +22,10 @@ exports.handler = async function (event, context) {
       statusCode: 200,
       body: JSON.stringify({
         token
-      })
+      }),
+      headers: {
+        "access-control-allow-origin": "*",
+      }
     }
   }
 
